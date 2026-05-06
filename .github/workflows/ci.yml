@@ -1,0 +1,10 @@
+name: CI-Aula-Pratica
+on: [push]
+jobs:
+  verificacao-inicial:
+  runs-on: ubuntu-latest
+  - name: checkout do codigo
+  uses: actions/checkout@v4
+  - name: simular teste
+  run: echo "Executando testes automatizados"
+  
